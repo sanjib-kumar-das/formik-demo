@@ -80,6 +80,14 @@ const App = () => {
                     </Grid>
                   )}
                 </FieldArray>
+                <Grid container spacing={2}>
+                  <Grid item md={6}>
+                    <Field fullWidth name="firstname" component={TextField} label="First Name" />
+                  </Grid>
+                  <Grid item md={6}>
+                    <Field fullWidth name="lastname" component={TextField} label="Last Name" />
+                  </Grid>
+                </Grid>
               </FormStepper>
             )}
           </Formik>
